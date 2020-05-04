@@ -33,12 +33,12 @@
             <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
             <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
-                <li :class="`nav-item ${$route.name == 'home' ? 'active' : ''}`"><a href="index.html" class="nav-link pl-0">Home</a></li>
+                <li :class="`nav-item ${$route.name == 'home' ? 'active' : ''}`">
+                    <router-link :to="{ name: 'home' }" class="nav-link">Home</router-link>
+                </li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                 <li :class="`nav-item ${$route.name == 'doctor' ? 'active' : ''}`">
-                    
                     <router-link :to="{ name: 'doctor' }" class="nav-link">Doctor</router-link>
-                    <!--<a href="/doctor" class="nav-link">Doctor</a>-->
                 </li>
                 <li class="nav-item"><a href="department.html" class="nav-link">Departments</a></li>
                 <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
